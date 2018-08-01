@@ -1,0 +1,13 @@
+{
+  "name": "PriceFeedMonitor",
+  "private": true,
+  "scripts": {
+        "compile": "truffle compile",
+        "monitor": "truffle exec ./scripts/monitorPriceFeed.js --network mainnet"
+  },  
+  "dependencies": {
+    "axios": "^0.18.0",
+    "fs": "^0.0.1-security",
+    "truffle-hdwallet-provider": "^0.0.6"
+  }
+}
