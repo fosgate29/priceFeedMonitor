@@ -6,12 +6,10 @@ const MakerDAOPriceFeed = artifacts.require('EthPriceFeedI');
 const fs   = require('fs');
 
 const Web3 = require('web3');
-const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/9S3haS0cNcapDEHbPINr'));
+const web3 = new Web3(new Web3.providers.HttpProvider(`https://mainnet.infura.io/${process.env.INFURA}`));
 
 const historyFile = './scripts/historyPriceFeed.csv';
 
-//export INFURA=9S3haS0cNcapDEHbPINr
-//truffle exec ./scripts/priceFeedHistory.js --network mainnet
 async function getHistory(){
 
     //Balance3 price - 
