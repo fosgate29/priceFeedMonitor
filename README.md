@@ -8,8 +8,10 @@ Install npm dependencies:
 * `yarn install`
 
 Add your INFURA env var token:
-* export INFURA="<INFURA token>"
+* `export INFURA="<INFURA token>"`
+
+Add your mnemoci words inside `truffle.js` file
 
 Execute script:
-* yarn compile
-* yarn monitor
+* `yarn compile`
+* `yarn monitor`
